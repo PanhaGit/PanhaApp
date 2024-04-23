@@ -1,35 +1,17 @@
-.underLine {
-  position: relative;
-  text-align: center;
+.skill-item {
+  display: flex;
+  align-items: center;
 }
 
-.underLine::before {
-  text-align: center;
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 44.5%;
-  width: 149px;
-  height: 3.4px;
-  background-color: #000;
-  transform-origin: left;
-  transform: scaleX(1);
-  transition: transform 0.3s ease;
-}
-.underLine::after {
-  text-align: center;
-  content: "";
-  position: absolute;
-  top: 44px;
-  left: 46%;
-  width: 100px;
-  height: 3px;
-  background-color: #000;
-  transform-origin: left;
-  transform: scaleX(1);
-  transition: transform 0.3s ease;
+.logo-container {
+  width: 50px; /* Adjust according to your icon size */
+  height: 50px; /* Adjust according to your icon size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px; /* Adjust spacing between icon and text */
 }
 
-/* .underLine:hover::after {
-  
-} */
+.logo {
+  font-size: 24px; /* Adjust according to your icon size */
+}

@@ -20,16 +20,16 @@ const Contant = () => {
             I am{" "}
             <TypeAnimation
               className="md:text-2xl text-xl font-normal text-orange-500"
-              sequence={["Web Desiger.", "Front-End Developer.", 1500]}
+              sequence={["Web Desiger.", 1500, "Front-End Developer.", 1500]}
               wrapper="span"
               speed={50}
               style={{ display: "inline-block" }}
               repeat={Infinity}
             />
           </h1>
-          <p className="group-hover:text-white transition-all ease-in delay-75 duration-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-            placeat?
+          <p className="group-hover:text-white transition-all cursor-default ease-in delay-75 duration-7 md:text-lg">
+            I'm a Junior Developer, Adobe Photoshop, React JS, React
+            TypeScript,Vue JS,PHP.😁
           </p>
           <div className="group-hover:text-white transition-all ease-in delay-75 duration-75">
             <Social />

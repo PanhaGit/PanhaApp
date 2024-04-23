@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo-removebg-preview (1).png";
-import { RiMenu3Fill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
+import { FaBars } from "react-icons/fa6";
 
 interface Menu {
   id: number;
@@ -19,6 +19,10 @@ const menuPages: Menu[] = [
   },
   {
     id: 3,
+    page: "Skils",
+  },
+  {
+    id: 4,
     page: "Contact",
   },
 ];
@@ -57,14 +61,18 @@ const Navbar: React.FC = () => {
         <div className="lg:hidden w-full ">
           <div className=" bg-white w-11/12 m-auto">
             <div className="container mx-auto flex justify-between items-center py-4">
-              <div className="w-20">
-                <img src={Logo} alt="Logo Panha" className="w-full" />
+              <div className="md:w-20 w-14">
+                <img src={Logo} alt="Logo Panha" className="md:w-full w-full" />
               </div>
               <button
                 className="text-3xl transition-opacity duration-300"
                 onClick={toggleMenu}
               >
-                {isMenuOpen ? <IoCloseSharp /> : <RiMenu3Fill />}
+                {isMenuOpen ? (
+                  <IoCloseSharp className="text-4xl" />
+                ) : (
+                  <FaBars />
+                )}
               </button>
             </div>
           </div>
