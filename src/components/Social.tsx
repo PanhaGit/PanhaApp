@@ -49,7 +49,7 @@ const Social: SocialType[] = [
 const SocialComponent = () => {
   return (
     <>
-      <div className="flex justify-center items-center space-x-3 py-3">
+      <div className="flex justify-center items-center space-x-6 py-5">
         {Social.map((item: SocialType) => {
           return (
             <div key={item.id}>
