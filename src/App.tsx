@@ -25,8 +25,8 @@ function App() {
       exit={{ opacity: 0 }}
       transition={{
         ease: "linear",
-        duration: 1,
-        x: { duration: 0.1 },
+        duration: 2,
+        x: { duration: 0.4 },
       }}
     >
       {/* href props to <Navber  />  */}
