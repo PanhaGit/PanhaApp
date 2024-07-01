@@ -1,10 +1,11 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Contant from "./components/Contant";
+// import About from "./components/About";
+// import Contact from "./components/Contact";
+// import Contant from "./components/Contant";
+// import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navber";
-import Skills from "./components/Skills";
 import { motion } from "framer-motion";
 interface MenuPageProps {
   id: number;
@@ -13,9 +14,8 @@ interface MenuPageProps {
 }
 const menuPages: MenuPageProps[] = [
   { id: 1, page: "Home", href: "/" },
-  { id: 2, page: "About", href: "#about" },
-  { id: 3, page: "Skills", href: "#skills" },
-  { id: 4, page: "Contact", href: "#contact" },
+  { id: 2, page: "Resume", href: "/resume" },
+  { id: 4, page: "Contact", href: "/contact" },
 ];
 function App() {
   return (
@@ -25,16 +25,12 @@ function App() {
       exit={{ opacity: 0 }}
       transition={{
         ease: "linear",
-        duration: 2,
-        x: { duration: 0.4 },
+        duration: 1.3,
+        x: { duration: 1.3 },
       }}
     >
-      {/* href props to <Navber  />  */}
       <Navbar menuPages={menuPages} />
-      <Contant />
-      <About id="about" />
-      <Skills id="skills" />
-      <Contact id="contact" />
+      <Outlet />
       <Footer />
     </motion.div>
   );

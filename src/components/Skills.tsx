@@ -3,10 +3,10 @@ import {
   FaCode,
   FaCss3Alt,
   FaHtml5,
-  FaJava,
-  FaPhp,
+  // FaJava,
+  // FaPhp,
   FaReact,
-  FaVuejs,
+  // FaVuejs,
 } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
@@ -47,7 +47,7 @@ const Skils: SkillsType[] = [
   {
     id: 6,
     logo: <SiTailwindcss />,
-    program: "Bootstrap",
+    program: "Tailwind CSS",
   },
   {
     id: 7,
@@ -59,21 +59,21 @@ const Skils: SkillsType[] = [
     logo: <SiJavascript />,
     program: "JavaScript",
   },
-  {
-    id: 9,
-    logo: <FaJava />,
-    program: "Java",
-  },
-  {
-    id: 10,
-    logo: <FaPhp />,
-    program: "PHP",
-  },
-  {
-    id: 11,
-    logo: <FaVuejs />,
-    program: "Vue JS",
-  },
+  // {
+  //   id: 9,
+  //   logo: <FaJava />,
+  //   program: "Java",
+  // },
+  // {
+  //   id: 10,
+  //   logo: <FaPhp />,
+  //   program: "PHP",
+  // },
+  // {
+  //   id: 11,
+  //   logo: <FaVuejs />,
+  //   program: "Vue JS",
+  // },
 ];
 interface SkillsProps {
   id: string;
