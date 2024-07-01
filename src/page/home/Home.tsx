@@ -33,7 +33,7 @@ const buttonVariants = {
 const Home = () => {
   return (
     <motion.div
-      className="md:w-10/12 m-auto w-11/12 mt-4 "
+      className="md:w-10/12 m-auto w-11/12 mt-4 overflow-hidden"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
