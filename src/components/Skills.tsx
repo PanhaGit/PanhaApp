@@ -11,6 +11,7 @@ import {
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import CodeSKills from "../assets/code.png";
+import { FaLaravel } from "react-icons/fa6";
 
 interface SkillsType {
   id: number;
@@ -59,11 +60,12 @@ const Skils: SkillsType[] = [
     logo: <SiJavascript />,
     program: "JavaScript",
   },
-  // {
-  //   id: 9,
-  //   logo: <FaJava />,
-  //   program: "Java",
-  // },
+  {
+    id: 9,
+    logo: <FaLaravel />,
+    program: "Laravel",
+  },
+
   // {
   //   id: 10,
   //   logo: <FaPhp />,

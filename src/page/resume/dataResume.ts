@@ -54,6 +54,7 @@ export const skills: Skill[] = [
   { id: 2, name: "Database Design", level: 25 },
   { id: 3, name: "Bootstrap", level: 70 },
   { id: 4, name: "Tailwind CSS", level: 75 },
+  { id: 5, name: "Figma UI/UX", level: 60 },
 ];
 
 export const codingSkills: Skill[] = [
@@ -65,4 +66,5 @@ export const codingSkills: Skill[] = [
   { id: 10, name: "React TypeScript", level: 50 },
   { id: 10, name: "NodeJS/ExpressJS", level: 50 },
   { id: 11, name: "SQL: MS Access/MySQL", level: 40 },
+  { id: 12, name: "Laravel", level: 80 },
 ];
