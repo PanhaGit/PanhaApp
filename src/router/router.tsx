@@ -1,30 +1,27 @@
-import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
+// src/router/router.tsx
+import React from "react";
+import { RouteObject } from "react-router-dom";
+
+import MasterLayout from "../components/layouts/MasterLayout";
+import MasterLayoutError from "../components/layouts/error/MasterLayoutError";
 import Home from "../page/home/Home";
 import Resume from "../page/resume/Resume";
 import Contact from "../components/Contact";
+import NotFound404 from "../page/error/NotFound404";
 
-const router = createBrowserRouter([
+export const RouterApp: RouteObject[] = [
   {
     path: "/",
-    element: <App />,
+    element: <MasterLayout />,
+    // <-- any thrown (or loader/action) error in this branch
+    //     will render MasterLayoutError
+    errorElement: <MasterLayoutError />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/resume", element: <Resume /> },
-      { path: "/contact", element: <Contact id="Contact" /> },
-      {
-        path: "*",
-        element: (
-          <div className="flex justify-center items-center m-auto">
-            <img
-              src="https://cdnl.iconscout.com/lottie/premium/thumb/404-error-page-animation-download-in-lottie-json-gif-static-svg-file-formats--not-found-web-the-ultimate-pack-design-development-animations-3299960.gif"
-              alt=""
-            />
-          </div>
-        ),
-      },
+      { index: true, element: <Home /> },
+      { path: "resume", element: <Resume /> },
+      { path: "contact", element: <Contact id="Contact" /> },
+      // 404 fallback
+      { path: "*", element: <NotFound404 /> },
     ],
   },
-]);
-
-export default router;
+];
