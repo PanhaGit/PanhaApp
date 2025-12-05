@@ -11,7 +11,7 @@ export interface MenuAppItem {
 }
 export const MENU_PAGES: MenuAppItem[] = [
   { id: 1, page: "Home", href: "/" },
-  { id: 2, page: "Resume", href: "/resume" },
+  { id: 2, page: "About", href: "/resume" },
   { id: 3, page: "Contact", href: "/contact" },
 ];
 export class InterfaceApp {

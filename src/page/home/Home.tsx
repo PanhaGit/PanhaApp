@@ -1,11 +1,9 @@
 import TypeAnimationHome from "../../components/TypeAnimationHome";
-import cv from "../../assets/CV/CV.pdf";
 import { Link } from "react-router-dom";
 import hero from "../../assets/hero.jpg";
 // import { FaFacebook, FaGithub, FaReact, FaTiktok } from "react-icons/fa6";
-import { FaReact } from "react-icons/fa6";
-import { SiMysql, SiTypescript } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io5";
+import { FaLaravel } from "react-icons/fa6";
+import { SiNextdotjs, SiNuxtdotjs, SiSpringboot } from "react-icons/si";
 import { motion } from "framer-motion";
 import "../../App.css";
 
@@ -61,7 +59,7 @@ const Home = () => {
               teams.
             </p>
             <div className="space-x-5">
-              <Link to={cv} target="_blank">
+              <Link to={"/"} target="_blank">
                 <motion.button
                   className="bg-bgCustomBlue md:py-2 md:px-5 py-3 px-6 text-customWhite shadow-btn_shadow"
                   variants={buttonVariants}
@@ -125,7 +123,7 @@ const Home = () => {
               initial="hidden"
               animate="visible"
             >
-              <FaReact className="text-4xl " />
+              <SiNuxtdotjs className="text-4xl " />
             </motion.span>
             <motion.span
               className="skils absolute top-[20%] right-[50%] transform translate-x-2/4 -translate-y-2/4"
@@ -133,7 +131,7 @@ const Home = () => {
               initial="hidden"
               animate="visible"
             >
-              <SiTypescript className="text-4xl" />
+              <SiNextdotjs className="text-4xl" />
             </motion.span>
             <motion.span
               className="skils absolute bottom-[30%] left-[50%] transform -translate-x-2/4 translate-y-2/4"
@@ -141,7 +139,7 @@ const Home = () => {
               initial="hidden"
               animate="visible"
             >
-              <IoLogoJavascript className="text-4xl" />
+              <FaLaravel className="text-4xl" />
             </motion.span>
             <motion.span
               className="skils absolute bottom-[30%] right-[50%] transform translate-x-2/4 translate-y-2/4"
@@ -149,7 +147,39 @@ const Home = () => {
               initial="hidden"
               animate="visible"
             >
-              <SiMysql className="text-4xl" />
+              <SiSpringboot className="text-4xl" />
+            </motion.span>
+            <motion.span
+              className="skils absolute bottom-[30%] right-[50%] transform translate-x-2/4 translate-y-2/4"
+              variants={iconVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              <SiSpringboot className="text-4xl" />
+            </motion.span>
+            <motion.span
+              className="skils absolute bottom-[30%] right-[50%] transform translate-x-2/4 translate-y-2/4"
+              variants={iconVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              <SiSpringboot className="text-4xl" />
+            </motion.span>
+            <motion.span
+              className="skils absolute bottom-[30%] right-[50%] transform translate-x-2/4 translate-y-2/4"
+              variants={iconVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              <SiSpringboot className="text-4xl" />
+            </motion.span>
+            <motion.span
+              className="skils absolute bottom-[30%] right-[50%] transform translate-x-2/4 translate-y-2/4"
+              variants={iconVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              <SiSpringboot className="text-4xl" />
             </motion.span>
 
             {/* Inner Circle with Image */}

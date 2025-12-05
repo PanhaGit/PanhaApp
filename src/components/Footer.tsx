@@ -1,13 +1,20 @@
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
   return (
-    <div className="w-full bg-gray-100 mt-7">
-      <footer className="bg-gray-100 py-7 w-11/12 m-auto">
-        <h4 className="text-center">
-          <a href="/">copyright &copy; {currentYear} by: Panha Tho</a>
-        </h4>
-      </footer>
-    </div>
+    <footer className="bg-gray-200 py-6 mt-10">
+      <h4 className="text-center text-gray-700">
+        © {currentYear}
+        <a href="/"> Panha Tho</a> |{" "}
+        <a
+          href="https://teamyearng.com"
+          target="_blank"
+          className="text-blue-600 hover:underline"
+        >
+          Teamyearng
+        </a>
+      </h4>
+    </footer>
   );
 };
 

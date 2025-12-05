@@ -55,16 +55,29 @@ export const skills: Skill[] = [
   { id: 3, name: "Bootstrap", level: 70 },
   { id: 4, name: "Tailwind CSS", level: 75 },
   { id: 5, name: "Figma UI/UX", level: 60 },
+  { id: 5, name: "Ant Design", level: 62 },
+];
+
+export const databaseSkills: Skill[] = [
+  { id: 1, name: "MySQL", level: 70 },
+  { id: 2, name: "PostgreSQL", level: 60 },
+  { id: 3, name: "MongoDB", level: 30 },
+  { id: 4, name: "Firebase", level: 30 },
+  { id: 5, name: "Microsoft SQL Server", level: 30 },
 ];
 
 export const codingSkills: Skill[] = [
   { id: 5, name: "JavaScript", level: 80 },
-  { id: 6, name: "PHP", level: 30 },
+  { id: 12, name: "Dart&Flutter", level: 67 },
+  { id: 6, name: "PHP", level: 60 },
   { id: 7, name: "HTML/CSS", level: 100 },
   { id: 8, name: "TypeScript", level: 70 },
-  { id: 9, name: "React JS", level: 65 },
-  { id: 10, name: "React TypeScript", level: 50 },
-  { id: 10, name: "NodeJS/ExpressJS", level: 50 },
-  { id: 11, name: "SQL: MS Access/MySQL", level: 40 },
+  { id: 9, name: "React JS", level: 85 },
+  { id: 10, name: "React TypeScript", level: 70 },
+  { id: 10, name: "NodeJS/ExpressJS", level: 72 },
   { id: 12, name: "Laravel", level: 80 },
+  { id: 12, name: "Spring Boot", level: 50 },
+  { id: 12, name: "Vue JS / Nuxt JS", level: 60 },
+  { id: 12, name: "Next JS", level: 40 },
+  { id: 12, name: "Angular JS", level: 30 },
 ];

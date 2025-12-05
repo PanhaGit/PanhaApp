@@ -1,5 +1,6 @@
 import { BrowserRouter, useRoutes } from "react-router-dom";
 import { RouterApp } from "./router/router";
+import { Toaster } from "react-hot-toast";
 
 function AppRoutes() {
   const routes = useRoutes(RouterApp);
@@ -8,8 +9,12 @@ function AppRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
+    <>
+      <Toaster position="top-center" />
+
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </>
   );
 }

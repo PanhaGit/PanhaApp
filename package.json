@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@types/react-icons": "^3.0.0",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^11.1.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.6.0",
     "react-lottie": "^1.2.10",
     "react-router-dom": "^6.24.0",
     "react-type-animation": "^3.2.0"

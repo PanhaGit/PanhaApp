@@ -1,5 +1,3 @@
-// src/router/router.tsx
-import React from "react";
 import { RouteObject } from "react-router-dom";
 
 import MasterLayout from "../components/layouts/MasterLayout";
@@ -19,7 +17,7 @@ export const RouterApp: RouteObject[] = [
     children: [
       { index: true, element: <Home /> },
       { path: "resume", element: <Resume /> },
-      { path: "contact", element: <Contact id="Contact" /> },
+      { path: "contact", element: <Contact /> },
       // 404 fallback
       { path: "*", element: <NotFound404 /> },
     ],
