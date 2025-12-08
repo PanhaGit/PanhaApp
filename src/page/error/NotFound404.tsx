@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { statusCode } from "../../utils/constant";
 
 const NotFound404 = () => {
